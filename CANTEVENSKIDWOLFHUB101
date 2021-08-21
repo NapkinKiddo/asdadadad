@@ -1,0 +1,1751 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Open = Instance.new("ImageButton")
+local TextLabel = Instance.new("TextLabel")
+local WolfFrame = Instance.new("ImageLabel")
+local TabsHolder = Instance.new("ImageLabel")
+local UICorner = Instance.new("UICorner")
+local CMB = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local LCLU = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local GunMods = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Visuals = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local AimScrolling = Instance.new("ScrollingFrame")
+local Autokill = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local SilentAim = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local Aimbot = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local On_off_Aimbot = Instance.new("TextLabel")
+local UICorner_9 = Instance.new("UICorner")
+local Wallbang = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local On_off_wall = Instance.new("TextLabel")
+local UICorner_11 = Instance.new("UICorner")
+local triggerbot = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local On_off_trigger = Instance.new("TextLabel")
+local UICorner_13 = Instance.new("UICorner")
+local Settings = Instance.new("ImageButton")
+local home = Instance.new("ImageButton")
+local Minimize = Instance.new("ImageButton")
+local CrackScrolling = Instance.new("ScrollingFrame")
+local TextLabel_2 = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local TextLabel_12 = Instance.new("TextLabel")
+local TextLabel_13 = Instance.new("TextLabel")
+local Homescrolling = Instance.new("ScrollingFrame")
+local TextLabel_14 = Instance.new("TextLabel")
+local TextLabel_15 = Instance.new("TextLabel")
+local TextLabel_16 = Instance.new("TextLabel")
+local TextLabel_17 = Instance.new("TextLabel")
+local TextLabel_18 = Instance.new("TextLabel")
+local TextLabel_19 = Instance.new("TextLabel")
+local TextLabel_20 = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local VisualssCROLLING = Instance.new("ScrollingFrame")
+local COCOESP = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local BoxEsp = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local On_off_BOX = Instance.new("TextLabel")
+local UICorner_16 = Instance.new("UICorner")
+local LCLUscrolling = Instance.new("Frame")
+local Speed = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local On_off_Speed = Instance.new("TextLabel")
+local UICorner_18 = Instance.new("UICorner")
+local Infinitejump = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local On_off_InfJump = Instance.new("TextLabel")
+local UICorner_20 = Instance.new("UICorner")
+local Noclip = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local On_off_Clip = Instance.new("TextLabel")
+local UICorner_22 = Instance.new("UICorner")
+local ChatSpam = Instance.new("TextButton")
+local UICorner_23 = Instance.new("UICorner")
+local GMICSZGMICSGMICS = Instance.new("TextLabel")
+local loadingpremium = Instance.new("Frame")
+local UICorner_24 = Instance.new("UICorner")
+local importante = Instance.new("Frame")
+local UICorner_25 = Instance.new("UICorner")
+local Load = Instance.new("TextButton")
+local UICorner_26 = Instance.new("UICorner")
+local TextLabel_21 = Instance.new("TextLabel")
+local TextLabel_22 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Open.Name = "Open"
+Open.Parent = ScreenGui
+Open.BackgroundTransparency = 1.000
+Open.Position = UDim2.new(0.862636805, 0, 0.478137344, 0)
+Open.Size = UDim2.new(0, 25, 0, 25)
+Open.Visible = false
+Open.ZIndex = 2
+Open.Image = "rbxassetid://3926305904"
+Open.ImageRectOffset = Vector2.new(164, 284)
+Open.ImageRectSize = Vector2.new(36, 36)
+
+TextLabel.Parent = Open
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-3.24000001, 0, 0.960000038, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Visible = false
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "To re-open wolf hub click on the button above."
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+
+WolfFrame.Name = "WolfFrame"
+WolfFrame.Parent = ScreenGui
+WolfFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WolfFrame.BackgroundTransparency = 1.000
+WolfFrame.Position = UDim2.new(0.157530844, 0, 0.203509495, 0)
+WolfFrame.Size = UDim2.new(0, 571, 0, 332)
+WolfFrame.Visible = false
+WolfFrame.Image = "rbxassetid://3570695787"
+WolfFrame.ImageColor3 = Color3.fromRGB(18, 18, 18)
+WolfFrame.ScaleType = Enum.ScaleType.Slice
+WolfFrame.SliceCenter = Rect.new(100, 100, 100, 100)
+WolfFrame.SliceScale = 0.120
+
+TabsHolder.Name = "TabsHolder"
+TabsHolder.Parent = WolfFrame
+TabsHolder.BackgroundColor3 = Color3.fromRGB(21, 21, 21)
+TabsHolder.Position = UDim2.new(0.036777582, 0, 0.108433738, 0)
+TabsHolder.Size = UDim2.new(0, 531, 0, 26)
+TabsHolder.ImageColor3 = Color3.fromRGB(21, 21, 21)
+TabsHolder.ScaleType = Enum.ScaleType.Slice
+TabsHolder.SliceCenter = Rect.new(100, 100, 100, 100)
+TabsHolder.SliceScale = 0.120
+
+UICorner.CornerRadius = UDim.new(0, 4)
+UICorner.Parent = TabsHolder
+
+CMB.Name = "CMB"
+CMB.Parent = TabsHolder
+CMB.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+CMB.BackgroundTransparency = 1.000
+CMB.Position = UDim2.new(0.083893165, 0, -0.0217795745, 0)
+CMB.Size = UDim2.new(0, 61, 0, 31)
+CMB.AutoButtonColor = false
+CMB.Font = Enum.Font.GothamSemibold
+CMB.Text = "Combat"
+CMB.TextColor3 = Color3.fromRGB(0, 0, 0)
+CMB.TextSize = 12.000
+
+UICorner_2.CornerRadius = UDim.new(0, 2)
+UICorner_2.Parent = CMB
+
+LCLU.Name = "LCLU"
+LCLU.Parent = TabsHolder
+LCLU.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+LCLU.BackgroundTransparency = 1.000
+LCLU.Position = UDim2.new(0.228902578, 0, -0.0217795745, 0)
+LCLU.Size = UDim2.new(0, 61, 0, 31)
+LCLU.AutoButtonColor = false
+LCLU.Font = Enum.Font.GothamSemibold
+LCLU.Text = "LocalPlayer"
+LCLU.TextColor3 = Color3.fromRGB(0, 0, 0)
+LCLU.TextSize = 12.000
+
+UICorner_3.CornerRadius = UDim.new(0, 2)
+UICorner_3.Parent = LCLU
+
+GunMods.Name = "GunMods"
+GunMods.Parent = TabsHolder
+GunMods.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+GunMods.BackgroundTransparency = 1.000
+GunMods.Position = UDim2.new(0.385211408, 0, -0.0217795745, 0)
+GunMods.Size = UDim2.new(0, 61, 0, 31)
+GunMods.AutoButtonColor = false
+GunMods.Font = Enum.Font.GothamSemibold
+GunMods.Text = "Gun Mods"
+GunMods.TextColor3 = Color3.fromRGB(0, 0, 0)
+GunMods.TextSize = 12.000
+
+UICorner_4.CornerRadius = UDim.new(0, 2)
+UICorner_4.Parent = GunMods
+
+Visuals.Name = "Visuals"
+Visuals.Parent = TabsHolder
+Visuals.BackgroundColor3 = Color3.fromRGB(114, 137, 218)
+Visuals.BackgroundTransparency = 1.000
+Visuals.Position = UDim2.new(0.511388481, 0, -0.0217795745, 0)
+Visuals.Size = UDim2.new(0, 61, 0, 31)
+Visuals.AutoButtonColor = false
+Visuals.Font = Enum.Font.GothamSemibold
+Visuals.Text = "Visuals"
+Visuals.TextColor3 = Color3.fromRGB(0, 0, 0)
+Visuals.TextSize = 12.000
+
+UICorner_5.CornerRadius = UDim.new(0, 2)
+UICorner_5.Parent = Visuals
+
+AimScrolling.Name = "AimScrolling"
+AimScrolling.Parent = WolfFrame
+AimScrolling.Active = true
+AimScrolling.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+AimScrolling.BorderSizePixel = 0
+AimScrolling.Position = UDim2.new(0.036777582, 0, 0.228683934, 0)
+AimScrolling.Size = UDim2.new(0, 531, 0, 244)
+AimScrolling.Visible = false
+AimScrolling.ScrollBarThickness = 1
+
+Autokill.Name = "Auto kill"
+Autokill.Parent = AimScrolling
+Autokill.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Autokill.Position = UDim2.new(0.0217463337, 0, 0.026343327, 0)
+Autokill.Size = UDim2.new(0, 507, 0, 31)
+Autokill.AutoButtonColor = false
+Autokill.Font = Enum.Font.GothamSemibold
+Autokill.Text = "Auto Farm"
+Autokill.TextColor3 = Color3.fromRGB(0, 0, 0)
+Autokill.TextSize = 12.000
+
+UICorner_6.CornerRadius = UDim.new(0, 2)
+UICorner_6.Parent = Autokill
+
+SilentAim.Name = "Silent Aim"
+SilentAim.Parent = AimScrolling
+SilentAim.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+SilentAim.Position = UDim2.new(0.0217463337, 0, 0.282367438, 0)
+SilentAim.Size = UDim2.new(0, 507, 0, 31)
+SilentAim.AutoButtonColor = false
+SilentAim.Font = Enum.Font.GothamSemibold
+SilentAim.Text = "Silent aim"
+SilentAim.TextColor3 = Color3.fromRGB(0, 0, 0)
+SilentAim.TextSize = 12.000
+
+UICorner_7.CornerRadius = UDim.new(0, 2)
+UICorner_7.Parent = SilentAim
+
+Aimbot.Name = "Aimbot"
+Aimbot.Parent = AimScrolling
+Aimbot.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Aimbot.Position = UDim2.new(0.0179798547, 0, 0.215682685, 0)
+Aimbot.Size = UDim2.new(0, 507, 0, 31)
+Aimbot.AutoButtonColor = false
+Aimbot.Font = Enum.Font.GothamSemibold
+Aimbot.Text = "Aimbot"
+Aimbot.TextColor3 = Color3.fromRGB(0, 0, 0)
+Aimbot.TextSize = 12.000
+
+UICorner_8.CornerRadius = UDim.new(0, 2)
+UICorner_8.Parent = Aimbot
+
+On_off_Aimbot.Name = "On_off_Aimbot"
+On_off_Aimbot.Parent = Aimbot
+On_off_Aimbot.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+On_off_Aimbot.Position = UDim2.new(0.934714437, 0, 0.0967741907, 0)
+On_off_Aimbot.Size = UDim2.new(0, 25, 0, 24)
+On_off_Aimbot.Font = Enum.Font.SourceSans
+On_off_Aimbot.TextColor3 = Color3.fromRGB(0, 0, 0)
+On_off_Aimbot.TextSize = 14.000
+On_off_Aimbot.TextTransparency = 1.000
+
+UICorner_9.Parent = On_off_Aimbot
+
+Wallbang.Name = "Wallbang"
+Wallbang.Parent = AimScrolling
+Wallbang.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Wallbang.Position = UDim2.new(0.0179798566, 0, 0.151145816, 0)
+Wallbang.Size = UDim2.new(0, 507, 0, 31)
+Wallbang.AutoButtonColor = false
+Wallbang.Font = Enum.Font.GothamSemibold
+Wallbang.Text = "Wall bang"
+Wallbang.TextColor3 = Color3.fromRGB(0, 0, 0)
+Wallbang.TextSize = 12.000
+
+UICorner_10.CornerRadius = UDim.new(0, 2)
+UICorner_10.Parent = Wallbang
+
+On_off_wall.Name = "On_off_wall"
+On_off_wall.Parent = Wallbang
+On_off_wall.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+On_off_wall.Position = UDim2.new(0.934714437, 0, 0.0967741907, 0)
+On_off_wall.Size = UDim2.new(0, 25, 0, 24)
+On_off_wall.Font = Enum.Font.SourceSans
+On_off_wall.TextColor3 = Color3.fromRGB(0, 0, 0)
+On_off_wall.TextSize = 14.000
+On_off_wall.TextTransparency = 1.000
+
+UICorner_11.Parent = On_off_wall
+
+triggerbot.Name = "trigger bot"
+triggerbot.Parent = AimScrolling
+triggerbot.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+triggerbot.Position = UDim2.new(0.0179798547, 0, 0.0881150216, 0)
+triggerbot.Size = UDim2.new(0, 507, 0, 31)
+triggerbot.AutoButtonColor = false
+triggerbot.Font = Enum.Font.GothamSemibold
+triggerbot.Text = "Trigger bot"
+triggerbot.TextColor3 = Color3.fromRGB(0, 0, 0)
+triggerbot.TextSize = 12.000
+
+UICorner_12.CornerRadius = UDim.new(0, 2)
+UICorner_12.Parent = triggerbot
+
+On_off_trigger.Name = "On_off_trigger"
+On_off_trigger.Parent = triggerbot
+On_off_trigger.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+On_off_trigger.Position = UDim2.new(0.934714437, 0, 0.0967741907, 0)
+On_off_trigger.Size = UDim2.new(0, 25, 0, 24)
+On_off_trigger.Font = Enum.Font.SourceSans
+On_off_trigger.TextColor3 = Color3.fromRGB(0, 0, 0)
+On_off_trigger.TextSize = 14.000
+On_off_trigger.TextTransparency = 1.000
+
+UICorner_13.Parent = On_off_trigger
+
+Settings.Name = "Settings"
+Settings.Parent = WolfFrame
+Settings.BackgroundTransparency = 1.000
+Settings.LayoutOrder = 17
+Settings.Position = UDim2.new(0.905509949, 0, 0.109019369, 0)
+Settings.Size = UDim2.new(0, 25, 0, 24)
+Settings.ZIndex = 2
+Settings.Image = "rbxassetid://3926305904"
+Settings.ImageRectOffset = Vector2.new(484, 204)
+Settings.ImageRectSize = Vector2.new(36, 36)
+
+home.Name = "home"
+home.Parent = WolfFrame
+home.BackgroundTransparency = 1.000
+home.LayoutOrder = 4
+home.Position = UDim2.new(0.0494620763, 0, 0.109019347, 0)
+home.Size = UDim2.new(0, 25, 0, 25)
+home.ZIndex = 2
+home.Image = "rbxassetid://3926305904"
+home.ImageRectOffset = Vector2.new(964, 204)
+home.ImageRectSize = Vector2.new(36, 36)
+
+Minimize.Name = "Minimize"
+Minimize.Parent = WolfFrame
+Minimize.BackgroundTransparency = 1.000
+Minimize.LayoutOrder = 19
+Minimize.Position = UDim2.new(0.923822701, 0, 0.0133571699, 0)
+Minimize.Size = UDim2.new(0, 25, 0, 25)
+Minimize.ZIndex = 2
+Minimize.Image = "rbxassetid://3926305904"
+Minimize.ImageRectOffset = Vector2.new(404, 284)
+Minimize.ImageRectSize = Vector2.new(36, 36)
+
+CrackScrolling.Name = "CrackScrolling"
+CrackScrolling.Parent = WolfFrame
+CrackScrolling.Active = true
+CrackScrolling.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+CrackScrolling.BorderSizePixel = 0
+CrackScrolling.Position = UDim2.new(0.0370000005, 0, 0.229000002, 0)
+CrackScrolling.Size = UDim2.new(0, 531, 0, 244)
+CrackScrolling.Visible = false
+CrackScrolling.ScrollBarThickness = 1
+
+TextLabel_2.Parent = CrackScrolling
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.292783499, 0, 0, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Gotham
+TextLabel_2.Text = "Info/settings tab"
+TextLabel_2.TextColor3 = Color3.fromRGB(179, 179, 179)
+TextLabel_2.TextSize = 14.000
+
+TextLabel_3.Parent = CrackScrolling
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.Position = UDim2.new(0.292783499, 0, 0.048192773, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.Gotham
+TextLabel_3.Text = "Wolf hub has delayed Jailbreak."
+TextLabel_3.TextColor3 = Color3.fromRGB(179, 179, 179)
+TextLabel_3.TextSize = 14.000
+
+TextLabel_4.Parent = CrackScrolling
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.Position = UDim2.new(0.292783499, 0, 0.0978915691, 0)
+TextLabel_4.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_4.Font = Enum.Font.Gotham
+TextLabel_4.Text = "What is wolf hub?"
+TextLabel_4.TextColor3 = Color3.fromRGB(179, 179, 179)
+TextLabel_4.TextSize = 14.000
+
+TextLabel_5.Parent = CrackScrolling
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.Position = UDim2.new(0.290721655, 0, 0.123493977, 0)
+TextLabel_5.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_5.Font = Enum.Font.Gotham
+TextLabel_5.Text = "Wolf hub is An exploiting GUI/UI made for several games. Like most Exploiting GUI/UI,"
+TextLabel_5.TextColor3 = Color3.fromRGB(179, 179, 179)
+TextLabel_5.TextSize = 11.000
+
+TextLabel_6.Parent = CrackScrolling
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.BackgroundTransparency = 1.000
+TextLabel_6.Position = UDim2.new(0.292783499, 0, 0.146084338, 0)
+TextLabel_6.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_6.Font = Enum.Font.Gotham
+TextLabel_6.Text = "Wolf hub grants the local user an unfair advantage against the other players."
+TextLabel_6.TextColor3 = Color3.fromRGB(179, 179, 179)
+TextLabel_6.TextSize = 11.000
+
+TextLabel_7.Parent = CrackScrolling
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.BackgroundTransparency = 1.000
+TextLabel_7.Position = UDim2.new(0.292783499, 0, 0.173192769, 0)
+TextLabel_7.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_7.Font = Enum.Font.Gotham
+TextLabel_7.Text = "Future updates?"
+TextLabel_7.TextColor3 = Color3.fromRGB(179, 179, 179)
+TextLabel_7.TextSize = 14.000
+
+TextLabel_8.Parent = CrackScrolling
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.BackgroundTransparency = 1.000
+TextLabel_8.Position = UDim2.new(0.289017022, 0, 0.198795184, 0)
+TextLabel_8.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_8.Font = Enum.Font.Gotham
+TextLabel_8.Text = "-Changing Ui option"
+TextLabel_8.TextColor3 = Color3.fromRGB(179, 179, 179)
+TextLabel_8.TextSize = 11.000
+
+TextLabel_9.Parent = CrackScrolling
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.BackgroundTransparency = 1.000
+TextLabel_9.Position = UDim2.new(0.289017022, 0, 0.221385539, 0)
+TextLabel_9.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_9.Font = Enum.Font.Gotham
+TextLabel_9.Text = "-Support for different executors"
+TextLabel_9.TextColor3 = Color3.fromRGB(179, 179, 179)
+TextLabel_9.TextSize = 11.000
+
+TextLabel_10.Parent = CrackScrolling
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.BackgroundTransparency = 1.000
+TextLabel_10.Position = UDim2.new(0.289017022, 0, 0.245481923, 0)
+TextLabel_10.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_10.Font = Enum.Font.Gotham
+TextLabel_10.Text = "-Toggle function"
+TextLabel_10.TextColor3 = Color3.fromRGB(179, 179, 179)
+TextLabel_10.TextSize = 11.000
+
+TextLabel_11.Parent = CrackScrolling
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.BackgroundTransparency = 1.000
+TextLabel_11.Position = UDim2.new(0.289017022, 0, 0.263554215, 0)
+TextLabel_11.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_11.Font = Enum.Font.Gotham
+TextLabel_11.Text = "-Support for more games"
+TextLabel_11.TextColor3 = Color3.fromRGB(179, 179, 179)
+TextLabel_11.TextSize = 11.000
+
+TextLabel_12.Parent = CrackScrolling
+TextLabel_12.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_12.BackgroundTransparency = 1.000
+TextLabel_12.Position = UDim2.new(0.289017022, 0, 0.290662646, 0)
+TextLabel_12.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_12.Font = Enum.Font.Gotham
+TextLabel_12.Text = "-More functions"
+TextLabel_12.TextColor3 = Color3.fromRGB(179, 179, 179)
+TextLabel_12.TextSize = 11.000
+
+TextLabel_13.Parent = WolfFrame
+TextLabel_13.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_13.BackgroundTransparency = 1.000
+TextLabel_13.Position = UDim2.new(0.208100244, 0, -0.0240963846, 0)
+TextLabel_13.Size = UDim2.new(0, 332, 0, 50)
+TextLabel_13.Font = Enum.Font.Gotham
+TextLabel_13.Text = "Wolf hub"
+TextLabel_13.TextColor3 = Color3.fromRGB(147, 147, 147)
+TextLabel_13.TextSize = 17.000
+
+Homescrolling.Name = "Homescrolling"
+Homescrolling.Parent = WolfFrame
+Homescrolling.Active = true
+Homescrolling.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+Homescrolling.BorderSizePixel = 0
+Homescrolling.Position = UDim2.new(0.036777582, 0, 0.228683934, 0)
+Homescrolling.Size = UDim2.new(0, 531, 0, 244)
+Homescrolling.ScrollBarThickness = 1
+
+TextLabel_14.Parent = Homescrolling
+TextLabel_14.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.BackgroundTransparency = 1.000
+TextLabel_14.Position = UDim2.new(0.306967974, 0, 0, 0)
+TextLabel_14.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_14.Font = Enum.Font.SourceSans
+TextLabel_14.Text = "SUSE"
+TextLabel_14.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_14.TextSize = 14.000
+
+TextLabel_15.Parent = Homescrolling
+TextLabel_15.BackgroundColor3 = Color3.fromRGB(172, 172, 172)
+TextLabel_15.BackgroundTransparency = 1.000
+TextLabel_15.Position = UDim2.new(0.306967974, 0, 0.0256024096, 0)
+TextLabel_15.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_15.Font = Enum.Font.SourceSans
+TextLabel_15.Text = "Welcome to Wolf hub!"
+TextLabel_15.TextColor3 = Color3.fromRGB(162, 162, 162)
+TextLabel_15.TextSize = 20.000
+
+TextLabel_16.Parent = Homescrolling
+TextLabel_16.BackgroundColor3 = Color3.fromRGB(172, 172, 172)
+TextLabel_16.BackgroundTransparency = 1.000
+TextLabel_16.Position = UDim2.new(0.306967974, 0, 0.0813253, 0)
+TextLabel_16.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_16.Font = Enum.Font.SourceSans
+TextLabel_16.Text = "Game detected - Arsenal"
+TextLabel_16.TextColor3 = Color3.fromRGB(162, 162, 162)
+TextLabel_16.TextSize = 20.000
+
+TextLabel_17.Parent = Homescrolling
+TextLabel_17.BackgroundColor3 = Color3.fromRGB(172, 172, 172)
+TextLabel_17.BackgroundTransparency = 1.000
+TextLabel_17.Position = UDim2.new(0.306967974, 0, 0.179216862, 0)
+TextLabel_17.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_17.Font = Enum.Font.SourceSans
+TextLabel_17.Text = "Didn't detect correct game?"
+TextLabel_17.TextColor3 = Color3.fromRGB(162, 162, 162)
+TextLabel_17.TextSize = 20.000
+
+TextLabel_18.Parent = Homescrolling
+TextLabel_18.BackgroundColor3 = Color3.fromRGB(172, 172, 172)
+TextLabel_18.BackgroundTransparency = 1.000
+TextLabel_18.Position = UDim2.new(0.306967974, 0, 0.209337339, 0)
+TextLabel_18.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_18.Font = Enum.Font.SourceSans
+TextLabel_18.Text = "If the game detected is wrong or the scripts dont work please contact us at our discord"
+TextLabel_18.TextColor3 = Color3.fromRGB(162, 162, 162)
+TextLabel_18.TextSize = 15.000
+
+TextLabel_19.Parent = TextLabel_18
+TextLabel_19.BackgroundColor3 = Color3.fromRGB(172, 172, 172)
+TextLabel_19.BackgroundTransparency = 1.000
+TextLabel_19.Position = UDim2.new(-0.00303202868, 0, 0.289337337, 0)
+TextLabel_19.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_19.Font = Enum.Font.SourceSans
+TextLabel_19.Text = ""
+TextLabel_19.TextColor3 = Color3.fromRGB(162, 162, 162)
+TextLabel_19.TextSize = 15.000
+
+TextLabel_20.Parent = TextLabel_19
+TextLabel_20.BackgroundColor3 = Color3.fromRGB(172, 172, 172)
+TextLabel_20.BackgroundTransparency = 1.000
+TextLabel_20.Position = UDim2.new(-0.00303202868, 0, 0.289337337, 0)
+TextLabel_20.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_20.Font = Enum.Font.SourceSans
+TextLabel_20.Text = "This applies for Faults and erros in the Ui too!"
+TextLabel_20.TextColor3 = Color3.fromRGB(162, 162, 162)
+TextLabel_20.TextSize = 15.000
+
+TextBox.Parent = TextLabel_19
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 1.000
+TextBox.Size = UDim2.new(0, 200, 0, 50)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.Text = "https://discord.gg/heAST6yEJu"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 14.000
+
+VisualssCROLLING.Name = "VisualssCROLLING"
+VisualssCROLLING.Parent = WolfFrame
+VisualssCROLLING.Active = true
+VisualssCROLLING.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+VisualssCROLLING.BorderSizePixel = 0
+VisualssCROLLING.Position = UDim2.new(0.036777582, 0, 0.228683934, 0)
+VisualssCROLLING.Size = UDim2.new(0, 531, 0, 244)
+VisualssCROLLING.Visible = false
+VisualssCROLLING.ScrollBarThickness = 1
+
+COCOESP.Name = "COCOESP"
+COCOESP.Parent = VisualssCROLLING
+COCOESP.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+COCOESP.Position = UDim2.new(0.0217463337, 0, 0.082066223, 0)
+COCOESP.Size = UDim2.new(0, 507, 0, 31)
+COCOESP.AutoButtonColor = false
+COCOESP.Font = Enum.Font.GothamSemibold
+COCOESP.Text = "Coco Z esp"
+COCOESP.TextColor3 = Color3.fromRGB(0, 0, 0)
+COCOESP.TextSize = 12.000
+
+UICorner_14.CornerRadius = UDim.new(0, 2)
+UICorner_14.Parent = COCOESP
+
+BoxEsp.Name = "BoxEsp"
+BoxEsp.Parent = VisualssCROLLING
+BoxEsp.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+BoxEsp.Position = UDim2.new(0.0219999999, 0, 0.0260000005, 0)
+BoxEsp.Size = UDim2.new(0, 507, 0, 31)
+BoxEsp.AutoButtonColor = false
+BoxEsp.Font = Enum.Font.GothamSemibold
+BoxEsp.Text = "Box Esp"
+BoxEsp.TextColor3 = Color3.fromRGB(0, 0, 0)
+BoxEsp.TextSize = 12.000
+
+UICorner_15.CornerRadius = UDim.new(0, 2)
+UICorner_15.Parent = BoxEsp
+
+On_off_BOX.Name = "On_off_BOX"
+On_off_BOX.Parent = BoxEsp
+On_off_BOX.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+On_off_BOX.Position = UDim2.new(0.934714437, 0, 0.0967741907, 0)
+On_off_BOX.Size = UDim2.new(0, 25, 0, 24)
+On_off_BOX.Visible = false
+On_off_BOX.Font = Enum.Font.SourceSans
+On_off_BOX.TextColor3 = Color3.fromRGB(0, 0, 0)
+On_off_BOX.TextSize = 14.000
+On_off_BOX.TextTransparency = 1.000
+
+UICorner_16.Parent = On_off_BOX
+
+LCLUscrolling.Name = "LCLUscrolling"
+LCLUscrolling.Parent = WolfFrame
+LCLUscrolling.BackgroundColor3 = Color3.fromRGB(22, 22, 22)
+LCLUscrolling.BorderSizePixel = 0
+LCLUscrolling.Position = UDim2.new(0.0370000005, 0, 0.229000002, 0)
+LCLUscrolling.Size = UDim2.new(0, 531, 0, 244)
+
+Speed.Name = "Speed"
+Speed.Parent = LCLUscrolling
+Speed.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Speed.Position = UDim2.new(0.0217463337, 0, 0.389443338, 0)
+Speed.Size = UDim2.new(0, 507, 0, 31)
+Speed.AutoButtonColor = false
+Speed.Font = Enum.Font.GothamSemibold
+Speed.Text = "Press B for speed"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextSize = 12.000
+
+UICorner_17.CornerRadius = UDim.new(0, 2)
+UICorner_17.Parent = Speed
+
+On_off_Speed.Name = "On_off_Speed"
+On_off_Speed.Parent = Speed
+On_off_Speed.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+On_off_Speed.Position = UDim2.new(0.934714437, 0, 0.0967741907, 0)
+On_off_Speed.Size = UDim2.new(0, 25, 0, 24)
+On_off_Speed.Font = Enum.Font.SourceSans
+On_off_Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+On_off_Speed.TextSize = 14.000
+On_off_Speed.TextTransparency = 1.000
+
+UICorner_18.Parent = On_off_Speed
+
+Infinitejump.Name = "Infinite jump"
+Infinitejump.Parent = LCLUscrolling
+Infinitejump.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Infinitejump.Position = UDim2.new(0.0217463337, 0, 0.229459077, 0)
+Infinitejump.Size = UDim2.new(0, 507, 0, 31)
+Infinitejump.AutoButtonColor = false
+Infinitejump.Font = Enum.Font.GothamSemibold
+Infinitejump.Text = "Infinite jump"
+Infinitejump.TextColor3 = Color3.fromRGB(0, 0, 0)
+Infinitejump.TextSize = 12.000
+
+UICorner_19.CornerRadius = UDim.new(0, 2)
+UICorner_19.Parent = Infinitejump
+
+On_off_InfJump.Name = "On_off_InfJump"
+On_off_InfJump.Parent = Infinitejump
+On_off_InfJump.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+On_off_InfJump.Position = UDim2.new(0.934714437, 0, 0.0967741907, 0)
+On_off_InfJump.Size = UDim2.new(0, 25, 0, 24)
+On_off_InfJump.Font = Enum.Font.SourceSans
+On_off_InfJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+On_off_InfJump.TextSize = 14.000
+On_off_InfJump.TextTransparency = 1.000
+
+UICorner_20.Parent = On_off_InfJump
+
+Noclip.Name = "Noclip"
+Noclip.Parent = LCLUscrolling
+Noclip.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+Noclip.Position = UDim2.new(0.0217463337, 0, 0.0655246675, 0)
+Noclip.Size = UDim2.new(0, 507, 0, 31)
+Noclip.AutoButtonColor = false
+Noclip.Font = Enum.Font.GothamSemibold
+Noclip.Text = " Press E to Noclip"
+Noclip.TextColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.TextSize = 12.000
+
+UICorner_21.CornerRadius = UDim.new(0, 2)
+UICorner_21.Parent = Noclip
+
+On_off_Clip.Name = "On_off_Clip"
+On_off_Clip.Parent = Noclip
+On_off_Clip.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+On_off_Clip.Position = UDim2.new(0.934714437, 0, 0.0967741907, 0)
+On_off_Clip.Size = UDim2.new(0, 25, 0, 24)
+On_off_Clip.Font = Enum.Font.SourceSans
+On_off_Clip.TextColor3 = Color3.fromRGB(0, 0, 0)
+On_off_Clip.TextSize = 14.000
+On_off_Clip.TextTransparency = 1.000
+
+UICorner_22.Parent = On_off_Clip
+
+ChatSpam.Name = "Chat Spam"
+ChatSpam.Parent = LCLUscrolling
+ChatSpam.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+ChatSpam.Position = UDim2.new(0.0217463318, 0, 0.567968905, 0)
+ChatSpam.Size = UDim2.new(0, 507, 0, 31)
+ChatSpam.AutoButtonColor = false
+ChatSpam.Font = Enum.Font.GothamSemibold
+ChatSpam.Text = "Chat Spam"
+ChatSpam.TextColor3 = Color3.fromRGB(0, 0, 0)
+ChatSpam.TextSize = 12.000
+
+UICorner_23.CornerRadius = UDim.new(0, 2)
+UICorner_23.Parent = ChatSpam
+
+GMICSZGMICSGMICS.Name = "GMICSZGMICSGMICS"
+GMICSZGMICSGMICS.Parent = ScreenGui
+GMICSZGMICSGMICS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GMICSZGMICSGMICS.BackgroundTransparency = 1.000
+GMICSZGMICSGMICS.Position = UDim2.new(0.355516642, 0, 0.280120492, 0)
+GMICSZGMICSGMICS.Size = UDim2.new(0, 200, 0, 50)
+GMICSZGMICSGMICS.Visible = false
+GMICSZGMICSGMICS.Font = Enum.Font.SourceSans
+GMICSZGMICSGMICS.Text = "GunMods Is coming soon! We are working on it!"
+GMICSZGMICSGMICS.TextColor3 = Color3.fromRGB(0, 0, 0)
+GMICSZGMICSGMICS.TextSize = 55.000
+
+loadingpremium.Name = "loadingpremium"
+loadingpremium.Parent = ScreenGui
+loadingpremium.BackgroundColor3 = Color3.fromRGB(20, 20, 20)
+loadingpremium.Position = UDim2.new(0.341584176, 0, 0.363448083, 0)
+loadingpremium.Size = UDim2.new(0, 306, 0, 134)
+
+UICorner_24.CornerRadius = UDim.new(0, 4)
+UICorner_24.Parent = loadingpremium
+
+importante.Name = "importante"
+importante.Parent = loadingpremium
+importante.BackgroundColor3 = Color3.fromRGB(25, 25, 25)
+importante.BorderColor3 = Color3.fromRGB(27, 42, 53)
+importante.Position = UDim2.new(0.0310120434, 0, 0.413729548, 0)
+importante.Size = UDim2.new(0, 287, 0, 69)
+
+UICorner_25.CornerRadius = UDim.new(0, 3)
+UICorner_25.Parent = importante
+
+Load.Name = "Load"
+Load.Parent = importante
+Load.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+Load.Position = UDim2.new(0.0514552966, 0, 0.407265931, 0)
+Load.Size = UDim2.new(0, 258, 0, 31)
+Load.AutoButtonColor = false
+Load.Font = Enum.Font.GothamSemibold
+Load.Text = "Load Wolf hub"
+Load.TextColor3 = Color3.fromRGB(0, 0, 0)
+Load.TextSize = 12.000
+
+UICorner_26.CornerRadius = UDim.new(0, 3)
+UICorner_26.Parent = Load
+
+TextLabel_21.Parent = importante
+TextLabel_21.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_21.BackgroundTransparency = 1.000
+TextLabel_21.Position = UDim2.new(-0.0539866574, 0, -0.184381902, 0)
+TextLabel_21.Size = UDim2.new(0, 332, 0, 55)
+TextLabel_21.Font = Enum.Font.Gotham
+TextLabel_21.Text = "Game Detected - Arsenal"
+TextLabel_21.TextColor3 = Color3.fromRGB(147, 147, 147)
+TextLabel_21.TextSize = 13.000
+
+TextLabel_22.Parent = loadingpremium
+TextLabel_22.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_22.BackgroundTransparency = 1.000
+TextLabel_22.Position = UDim2.new(-0.0435337424, 0, -0.0539471321, 0)
+TextLabel_22.Size = UDim2.new(0, 332, 0, 50)
+TextLabel_22.Font = Enum.Font.Gotham
+TextLabel_22.Text = "Wolf hub - Synapse X v2.10.0"
+TextLabel_22.TextColor3 = Color3.fromRGB(147, 147, 147)
+TextLabel_22.TextSize = 17.000
+
+-- Scripts:
+
+local function HQUOL_fake_script() -- Open.LocalScript 
+	local script = Instance.new('LocalScript', Open)
+
+	script.parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.WolfFrame.Visible = true
+		script.Parent.Parent.Open.Visible = false 
+	end)
+end
+coroutine.wrap(HQUOL_fake_script)()
+local function VRFWT_fake_script() -- CMB.LocalScript 
+	local script = Instance.new('LocalScript', CMB)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(124, 151, 238)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(114, 137, 218)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(VRFWT_fake_script)()
+local function HOTOVX_fake_script() -- CMB.LocalScript 
+	local script = Instance.new('LocalScript', CMB)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CrackScrolling.Visible = false
+		script.Parent.Parent.Parent.AimScrolling.Visible = true
+		script.Parent.Parent.Parent.LCLUscrolling.Visible = false 
+		script.Parent.Parent.Parent.Homescrolling.Visible = false
+		script.Parent.Parent.Parent.VisualssCROLLING.Visible = false
+	end)
+end
+coroutine.wrap(HOTOVX_fake_script)()
+local function LQDUVO_fake_script() -- LCLU.LocalScript 
+	local script = Instance.new('LocalScript', LCLU)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(124, 151, 238)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(114, 137, 218)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(LQDUVO_fake_script)()
+local function IPWJ_fake_script() -- LCLU.LocalScript 
+	local script = Instance.new('LocalScript', LCLU)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CrackScrolling.Visible = false
+		script.Parent.Parent.Parent.AimScrolling.Visible = false
+		script.Parent.Parent.Parent.LCLUscrolling.Visible = true
+		script.Parent.Parent.Parent.Homescrolling.Visible = false
+		script.Parent.Parent.Parent.VisualssCROLLING.Visible = false
+		
+	end)
+end
+coroutine.wrap(IPWJ_fake_script)()
+local function VNWPEV_fake_script() -- GunMods.LocalScript 
+	local script = Instance.new('LocalScript', GunMods)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(124, 151, 238)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(114, 137, 218)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(VNWPEV_fake_script)()
+local function RXXEJKJ_fake_script() -- GunMods.LocalScript 
+	local script = Instance.new('LocalScript', GunMods)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.GMICSZGMICSGMICS.Visible = true
+		script.Parent.Parent.Parent.Parent.WolfFrame.Visible = false
+		wait(5)
+		script.Parent.Parent.Parent.Parent.GMICSZGMICSGMICS.Visible = false
+		script.Parent.Parent.Parent.Parent.WolfFrame.Visible = true
+		script.Parent.Parent.Parent.Homescrolling.Visible = false
+	end)
+end
+coroutine.wrap(RXXEJKJ_fake_script)()
+local function RGSNRVF_fake_script() -- Visuals.LocalScript 
+	local script = Instance.new('LocalScript', Visuals)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(124, 151, 238)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(114, 137, 218)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(RGSNRVF_fake_script)()
+local function SVBQIBL_fake_script() -- Visuals.LocalScript 
+	local script = Instance.new('LocalScript', Visuals)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.CrackScrolling.Visible = false
+		script.Parent.Parent.Parent.AimScrolling.Visible = false
+		script.Parent.Parent.Parent.LCLUscrolling.Visible = false 
+		script.Parent.Parent.Parent.Homescrolling.Visible = false
+		script.Parent.Parent.Parent.VisualssCROLLING.Visible = true
+	end)
+end
+coroutine.wrap(SVBQIBL_fake_script)()
+local function QEOUE_fake_script() -- Autokill.LocalScript 
+	local script = Instance.new('LocalScript', Autokill)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(30,30,30)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(25, 25, 25)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(QEOUE_fake_script)()
+local function QSHAIKS_fake_script() -- Autokill.LocalScript 
+	local script = Instance.new('LocalScript', Autokill)
+
+	
+	script.Parent.MouseButton1Click:Connect(function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/MisterGunXD/yes/main/rolve%3C3.lua"))();
+	end)
+end
+coroutine.wrap(QSHAIKS_fake_script)()
+local function TBBOAYT_fake_script() -- SilentAim.LocalScript 
+	local script = Instance.new('LocalScript', SilentAim)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(30,30,30)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(25, 25, 25)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(TBBOAYT_fake_script)()
+local function XAIJV_fake_script() -- SilentAim.LocalScript 
+	local script = Instance.new('LocalScript', SilentAim)
+
+	_G.Silent = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.Silent then
+			_G.Silent = false
+		else
+			_G.Silent = true
+			
+		end
+	
+		local Players = game:GetService("Players")
+		local LocalPlayer = Players.LocalPlayer
+		local mouse = LocalPlayer:GetMouse()
+		local Camera = workspace.CurrentCamera
+		local Debris = game:GetService("Debris")
+		local UserInputService = game:GetService("UserInputService")
+		local target = false
+		local RunService = game:GetService("RunService")
+	
+	
+		_G.Silent = true getfenv().lock = "Random" -- Head or Hitbox or Random
+	
+		fov = 250;
+		local fovCircle = true;
+		local st = tonumber(tick());
+		warn("Loading script...")
+	
+		if fovCircle then
+			function createcircle()
+				local a=Drawing.new('Circle');a.Transparency=1;a.Thickness=1.5;a.Visible=true;a.Color=Color3.fromRGB(20,20,20);a.Filled=false;a.Radius=fov;
+				return a;
+			end;  
+			local fovc = createcircle();
+			spawn(function()
+				RunService:BindToRenderStep("FovCircle",1,function()
+					fovc.Position = Vector2.new(mouse.X,mouse.Y)
+				end);
+			end);
+		end;
+	
+		function isFfa()
+			local am = #Players:GetChildren();
+			local amm = 0;
+			for i , v in pairs(Players:GetChildren()) do
+				if v.Team == LocalPlayer.Team then
+					amm = amm + 1;
+				end;
+			end;
+			return am == amm;
+		end;
+		function getnearest()
+			local nearestmagnitude = math.huge
+			local nearestenemy = nil
+			local vector = nil
+			local ffa = isFfa();
+			for i,v in next, Players:GetChildren() do
+				if ffa == false and v.Team ~= LocalPlayer.Team or ffa == true then
+					if _G.Silent and v.Character and  v.Character:FindFirstChild("HumanoidRootPart") and v.Character:FindFirstChild("Humanoid") and v.Character.Humanoid.Health > 0 then
+						local vector, onScreen = Camera:WorldToScreenPoint(v.Character["HumanoidRootPart"].Position)
+						if onScreen then
+							local ray = Ray.new(
+								Camera.CFrame.p,
+								(v.Character["Head"].Position-Camera.CFrame.p).unit*500
+							)
+							local ignore = {
+								LocalPlayer.Character,
+							}
+							local hit,position,normal=workspace:FindPartOnRayWithIgnoreList(ray,ignore)
+							if hit and hit:FindFirstAncestorOfClass("Model") and Players:FindFirstChild(hit:FindFirstAncestorOfClass("Model").Name)then
+								local magnitude = (Vector2.new(mouse.X, mouse.Y) - Vector2.new(vector.X, vector.Y)).magnitude
+								if magnitude < nearestmagnitude and magnitude <= fov then
+									nearestenemy = v
+									nearestmagnitude = magnitude
+								end
+							end
+						end
+					end
+				end
+			end
+			return nearestenemy
+		end
+	
+	
+		local meta = getrawmetatable(game)
+		setreadonly(meta, false)
+		local oldNamecall = meta.__namecall
+		meta.__namecall = newcclosure(function(...)
+	
+			local method = getnamecallmethod()
+			local args = {...}
+			if string.find(method,'Ray') then
+				if target then
+					if args[1].Name ~= "Workspace" then
+						print(args[1])
+					end;
+					args[2] = Ray.new(workspace.CurrentCamera.CFrame.Position, (target.Position + Vector3.new(0,(workspace.CurrentCamera.CFrame.Position-target.Position).Magnitude/500,0) - workspace.CurrentCamera.CFrame.Position).unit * 5000)
+				end
+			end
+			return oldNamecall(unpack(args))
+		end)
+	
+		warn("Script loaded!\nTime taken: "..math.abs(tonumber(tick())-st))
+		RunService:BindToRenderStep("SilentAim",1,function()
+			if UserInputService:IsMouseButtonPressed(0) and Players.LocalPlayer.Character and Players.LocalPlayer.Character:FindFirstChild("Humanoid") and Players.LocalPlayer.Character.Humanoid.Health > 0 then
+				local enemy = getnearest()
+				if enemy and enemy.Character and enemy.Character:FindFirstChild("Humanoid") and enemy.Character.Humanoid.Health > 0 then                
+					local vector, onScreen = Camera:WorldToScreenPoint(enemy.Character["Head"].Position)
+					local head = (Vector2.new(mouse.X, mouse.Y) - Vector2.new(vector.X, vector.Y)).magnitude
+					local vector, onScreen = Camera:WorldToScreenPoint(enemy.Character["HumanoidRootPart"].Position)
+					local hitbox = (Vector2.new(mouse.X, mouse.Y) - Vector2.new(vector.X, vector.Y)).magnitude
+					if head <= hitbox then
+						magnitude = head
+					else
+						magnitude = hitbox;
+					end;
+					if getfenv().lock == "Head" then
+						target = workspace[enemy.Name]["Head"]
+					else
+						if getfenv().lock == "Random" then
+							if magnitude == hitbox then
+								target = workspace[enemy.Name]["HumanoidRootPart"];
+							else
+								target = workspace[enemy.Name]["Head"]
+							end;
+						else
+							target = workspace[enemy.Name]["HumanoidRootPart"];
+						end;
+	
+					end;
+				else
+					target = nil
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(XAIJV_fake_script)()
+local function KMYIGS_fake_script() -- Aimbot.LocalScript 
+	local script = Instance.new('LocalScript', Aimbot)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(30,30,30)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(25, 25, 25)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(KMYIGS_fake_script)()
+local function VUJQAX_fake_script() -- Aimbot.LocalScript 
+	local script = Instance.new('LocalScript', Aimbot)
+
+	_G.aimbot = false
+	local camera = game.Workspace.CurrentCamera
+	local localplayer = game:GetService("Players").LocalPlayer
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.aimbot == false then
+			_G.aimbot = true
+			script.Parent.On_off_Aimbot.BackgroundColor3 = Color3.fromRGB(170,255,00)
+			function closestplayer()
+				local dist = math.huge -- math.huge means a really large number, 1M+.
+				local target = nil --- nil means no value
+				for i,v in pairs (game:GetService("Players"):GetPlayers()) do
+					if v ~= localplayer then
+						if v.Character and v.Character:FindFirstChild("Head") and v.TeamColor ~= localplayer.TeamColor and _G.aimbot and v.Character.Humanoid.Health > 0 then --- creating the checks
+							local magnitude = (v.Character.Head.Position - localplayer.Character.Head.Position).magnitude
+							if magnitude < dist then
+								dist = magnitude
+								target = v
+							end
+	
+						end
+					end
+				end
+				return target
+			end
+	
+		else
+			_G.aimbot = false
+			script.Parent.On_off_Aimbot.BackgroundColor3 = Color3.fromRGB(255,00,00)
+		end
+	end)
+	
+	local settings = {
+		keybind = Enum.UserInputType.MouseButton2
+	}
+	
+	local UIS = game:GetService("UserInputService")
+	local aiming = false --- this toggle will make it so we lock on to the person when we press our keybind
+	
+	UIS.InputBegan:Connect(function(inp)
+		if inp.UserInputType == settings.keybind then
+			aiming = true
+		end
+	end)
+	
+	UIS.InputEnded:Connect(function(inp)
+		if inp.UserInputType == settings.keybind then ---- when we stop pressing the keybind it would unlock off the player
+			aiming = false
+		end
+	end)
+	
+	game:GetService("RunService").RenderStepped:Connect(function()
+		if aiming then
+			camera.CFrame = CFrame.new(camera.CFrame.Position,closestplayer().Character.Head.Position) -- locks into the HEAD
+		end
+	end)
+	
+end
+coroutine.wrap(VUJQAX_fake_script)()
+local function GHKTFL_fake_script() -- Wallbang.LocalScript 
+	local script = Instance.new('LocalScript', Wallbang)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(30,30,30)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(25, 25, 25)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(GHKTFL_fake_script)()
+local function MFEUYLN_fake_script() -- Wallbang.LocalScript 
+	local script = Instance.new('LocalScript', Wallbang)
+
+	_G.Wallbang = false
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.Wallbang then 
+			_G.Wallbang = false
+			script.Parent.On_off_wall.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+		else
+			_G.Wallbang = true
+			script.Parent.On_off_wall.BackgroundColor3 = Color3.fromRGB(170, 255, 0)
+		end
+		
+		local MT = getrawmetatable(game)
+		local OldIndex = MT.__index
+		setreadonly(MT, false)
+		MT.__index = newcclosure(function(A, B)
+			if B == "Clips" then
+				if _G.Wallbang then
+					return workspace.Map
+				end
+			end
+			return OldIndex(A, B)
+		end)
+	end)
+	
+end
+coroutine.wrap(MFEUYLN_fake_script)()
+local function KKQAFKT_fake_script() -- triggerbot.LocalScript 
+	local script = Instance.new('LocalScript', triggerbot)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(30,30,30)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(25, 25, 25)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(KKQAFKT_fake_script)()
+local function KONCLUK_fake_script() -- triggerbot.LocalScript 
+	local script = Instance.new('LocalScript', triggerbot)
+
+	_G.triggerbot = false---- the _G function. Needed for alot of things.
+	local player = game:GetService("Players").LocalPlayer
+	local mouse = player:GetMouse()---gets the player mouse
+	script.Parent.MouseButton1Click:Connect(function()
+		if _G.triggerbot then----checking if the _G function is there
+			_G.triggerbot = false---double checking to make it false
+			script.Parent.On_off_trigger.BackgroundColor3 = Color3.fromRGB(255, 0, 0)---this is to make the red red. its disabled
+	
+		else---acts like a if clicked again
+			_G.triggerbot = true---makes trigger bot true 
+			script.Parent.On_off_trigger.BackgroundColor3 = Color3.fromRGB(170, 255, 0)---changes color of the frame
+			game:GetService("RunService").RenderStepped:Connect(function()---the trigger bot script
+				if mouse.Target.Parent:FindFirstChild("Humanoid") and _G.triggerbot and mouse.Target.Parent.Name ~= player.Name then
+					mouse1press() wait() mouse1release()            ---|the thing above is checking if _G is there. its double checking in the concurrent script to see if its true or false
+				end
+			end)
+		end
+	end)
+	
+end
+coroutine.wrap(KONCLUK_fake_script)()
+local function RJMCZTL_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.CrackScrolling.Visible = true
+		script.Parent.Parent.AimScrolling.Visible = false
+		script.Parent.Parent.LCLUscrolling.Visible = false
+	script.Parent.Parent.VisualssCROLLING.Visible = false
+		script.parent.parent.Homescrolling.Visible = false
+	end)
+end
+coroutine.wrap(RJMCZTL_fake_script)()
+local function UITAO_fake_script() -- home.LocalScript 
+	local script = Instance.new('LocalScript', home)
+
+	----guys i put the wrong code here! if you are wondering what is it here:
+	--script.parent.MouseButton1Down:Connect(function()
+	--script.Parent.Parent.AimScrolling.Visible = true
+	--script.Parent.Parent.CrackScrolling.Visible = false
+	--end) putting this in anybutton will causse aimscrolling to appear! DO NOT TOUCH 
+	script.parent.MouseButton1Down:Connect(function()
+	script.Parent.Parent.AimScrolling.Visible = false
+		script.Parent.Parent.CrackScrolling.Visible = false
+		script.Parent.Parent.LCLUscrolling.Visible = false
+		script.Parent.Parent.Homescrolling.Visible = true
+		script.Parent.Parent.VisualssCROLLING.Visible = false
+	end)
+	
+	
+	
+end
+coroutine.wrap(UITAO_fake_script)()
+local function RGPOS_fake_script() -- Minimize.LocalScript 
+	local script = Instance.new('LocalScript', Minimize)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.WolfFrame.Visible = false 
+		script.Parent.Parent.Parent.Open.Visible = true 
+	end)
+end
+coroutine.wrap(RGPOS_fake_script)()
+local function FSACXLC_fake_script() -- WolfFrame.LocalScript 
+	local script = Instance.new('LocalScript', WolfFrame)
+
+	frame = script.Parent.Parent.WolfFrame
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(FSACXLC_fake_script)()
+local function JOMMJ_fake_script() -- TextLabel_14.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_14)
+
+	script.Parent.Text = "Hello " .. game.Players.LocalPlayer.Name .. "!"
+end
+coroutine.wrap(JOMMJ_fake_script)()
+local function QLJDIF_fake_script() -- COCOESP.LocalScript 
+	local script = Instance.new('LocalScript', COCOESP)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(30,30,30)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(25, 25, 25)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(QLJDIF_fake_script)()
+local function CHHGI_fake_script() -- COCOESP.LocalScript 
+	local script = Instance.new('LocalScript', COCOESP)
+
+	script.Parent.MouseButton1Click:Connect(function()
+	--[[
+	
+	          _              _               _           _            _      
+	        /\ \           /\ \             /\ \        / /\         /\ \    
+	       /  \ \         /  \ \           /  \ \      / /  \       /  \ \   
+	      / /\ \ \       / /\ \ \         / /\ \ \    / / /\ \__   / /\ \ \  
+	     / / /\ \ \     / / /\ \ \       / / /\ \_\  / / /\ \___\ / / /\ \_\ 
+	    / / /  \ \_\   / / /  \ \_\     / /_/_ \/_/  \ \ \ \/___// / /_/ / / 
+	   / / /    \/_/  / / /    \/_/    / /____/\      \ \ \     / / /__\/ /  
+	  / / /          / / /            / /\____\/  _    \ \ \   / / /_____/   
+	 / / /________  / / /________    / / /______ /_/\__/ / /  / / /          
+	/ / /_________\/ / /_________\  / / /_______\\ \/___/ /  / / /           
+	\/____________/\/____________/  \/__________/ \_____\/   \/_/            
+	
+	CC ESP is a universal ESP made to work with 90% of games, it has Toggle, Manual and Auto-Refresh, the ESP is completely
+	Open Sourced and is based off an MM2 ESP. This ESP is included with Coco Z3.
+	
+	]]--
+	
+		local place = game.PlaceId
+	
+		if place == 142823291 then
+			loadstring(game:HttpGet(('https://gitlab.com/cccontrol/cccontrol/-/raw/master/CCMM2ESP'),true))()
+		else
+			loadstring(game:HttpGet(('https://gitlab.com/cccontrol/cccontrol/-/raw/master/ccuniversalesp'),true))()
+		end
+	end)
+end
+coroutine.wrap(CHHGI_fake_script)()
+local function GAVNRP_fake_script() -- BoxEsp.LocalScript 
+	local script = Instance.new('LocalScript', BoxEsp)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(30,30,30)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(25, 25, 25)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(GAVNRP_fake_script)()
+local function JFWVGNU_fake_script() -- BoxEsp.LocalScript 
+	local script = Instance.new('LocalScript', BoxEsp)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local plr = game.Players.LocalPlayer
+		local camera = game.Workspace.CurrentCamera
+	
+		for i, v in pairs(game.Players:GetChildren()) do
+			local Top = Drawing.new("Line")
+			Top.Visible = false
+			Top.From = Vector2.new(0, 0)
+			Top.To = Vector2.new(200, 200)
+			Top.Color = Color3.fromRGB(0, 0, 0)
+			Top.Thickness = 2
+			Top.Transparency = 1
+	
+			local Bottom = Drawing.new("Line")
+			Bottom.Visible = false
+			Bottom.From = Vector2.new(0, 0)
+			Bottom.To = Vector2.new(200, 200)
+			Bottom.Color = Color3.fromRGB(0, 0, 0)
+			Bottom.Thickness = 2
+			Bottom.Transparency = 1
+	
+			local Left = Drawing.new("Line")
+			Left.Visible = false
+			Left.From = Vector2.new(0, 0)
+			Left.To = Vector2.new(200, 200)
+			Left.Color = Color3.fromRGB(0, 0, 0)
+			Left.Thickness = 2
+			Left.Transparency = 1
+	
+			local Right = Drawing.new("Line")
+			Right.Visible = false
+			Right.From = Vector2.new(0, 0)
+			Right.To = Vector2.new(200, 200)
+			Right.Color = Color3.fromRGB(0, 0, 0)
+			Right.Thickness = 2
+			Right.Transparency = 1
+	
+			function ESP()
+				local connection
+				connection = game:GetService("RunService").RenderStepped:Connect(function()
+					if v.Character ~= nil and v.Character:FindFirstChild("HumanoidRootPart") ~= nil and v.Name ~= plr.Name  and v.Character.Humanoid.Health > 0 then 
+						local ScreenPos, OnScreen = camera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+						if OnScreen then
+							local Scale = v.Character.Head.Size.Y/2
+							local Size = Vector3.new(2, 3, 0) * (Scale * 2)
+							local humpos = camera:WorldToViewportPoint(v.Character.HumanoidRootPart.Position)
+							local TL = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, Size.Y, 0)).p)
+							local TR = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, Size.Y, 0)).p)
+							local BL = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, -Size.Y, 0)).p)
+							local BR = camera:WorldToViewportPoint((v.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, -Size.Y, 0)).p)
+	
+							Top.From = Vector2.new(TL.X, TL.Y)
+							Top.To = Vector2.new(TR.X, TR.Y)
+	
+							Left.From = Vector2.new(TL.X, TL.Y)
+							Left.To = Vector2.new(BL.X, BL.Y)
+	
+							Right.From = Vector2.new(TR.X, TR.Y)
+							Right.To = Vector2.new(BR.X, BR.Y)
+	
+							Bottom.From = Vector2.new(BL.X, BL.Y)
+							Bottom.To = Vector2.new(BR.X, BR.Y)
+	
+							if v.TeamColor == plr.TeamColor then
+								Top.Color = Color3.fromRGB(0, 0, 255)
+								Left.Color = Color3.fromRGB(0, 0, 255)
+								Bottom.Color = Color3.fromRGB(0, 0, 255)
+								Right.Color = Color3.fromRGB(0, 0, 255)
+							else 
+								Top.Color = Color3.fromRGB(0, 0, 0)
+								Left.Color = Color3.fromRGB(0, 0, 0)
+								Bottom.Color = Color3.fromRGB(0, 0, 0)
+								Right.Color = Color3.fromRGB(0, 0, 0)
+							end
+	
+							Top.Visible = true
+							Left.Visible = true
+							Bottom.Visible = true
+							Right.Visible = true
+						else 
+							Top.Visible = false
+							Left.Visible = false
+							Bottom.Visible = false
+							Right.Visible = false
+						end
+					else 
+						Top.Visible = false
+						Left.Visible = false
+						Bottom.Visible = false
+						Right.Visible = false
+						if game.Players:FindFirstChild(v.Name) == nil then
+							connection:Disconnect()
+						end
+					end
+				end)
+			end
+			coroutine.wrap(ESP)()
+		end
+	
+		game.Players.PlayerAdded:Connect(function(newplr) --Parameter gets the new player that has been added
+			local Top = Drawing.new("Line")
+			Top.Visible = false
+			Top.From = Vector2.new(0, 0)
+			Top.To = Vector2.new(200, 200)
+			Top.Color = Color3.fromRGB(0, 0, 0)
+			Top.Thickness = 2
+			Top.Transparency = 1
+	
+			local Bottom = Drawing.new("Line")
+			Bottom.Visible = false
+			Bottom.From = Vector2.new(0, 0)
+			Bottom.To = Vector2.new(200, 200)
+			Bottom.Color = Color3.fromRGB(0, 0, 0)
+			Bottom.Thickness = 2
+			Bottom.Transparency = 1
+	
+			local Left = Drawing.new("Line")
+			Left.Visible = false
+			Left.From = Vector2.new(0, 0)
+			Left.To = Vector2.new(200, 200)
+			Left.Color = Color3.fromRGB(0, 0, 0)
+			Left.Thickness = 2
+			Left.Transparency = 1
+	
+			local Right = Drawing.new("Line")
+			Right.Visible = false
+			Right.From = Vector2.new(0, 0)
+			Right.To = Vector2.new(200, 200)
+			Right.Color = Color3.fromRGB(0, 0, 0)
+			Right.Thickness = 2
+			Right.Transparency = 1
+	
+			function ESP()
+				local connection
+				connection = game:GetService("RunService").RenderStepped:Connect(function()
+					if newplr.Character ~= nil and newplr.Character:FindFirstChild("HumanoidRootPart") ~= nil and newplr.Name ~= plr.Name  and newplr.Character.Humanoid.Health > 0 then
+						local ScreenPos, OnScreen = camera:WorldToViewportPoint(newplr.Character.HumanoidRootPart.Position)
+						if OnScreen then
+							local Scale = newplr.Character.Head.Size.Y/2
+							local Size = Vector3.new(2, 3, 0) * (Scale * 2)
+							local humpos = camera:WorldToViewportPoint(newplr.Character.HumanoidRootPart.Position)
+							local TL = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, Size.Y, 0)).p)
+							local TR = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, Size.Y, 0)).p)
+							local BL = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(Size.X, -Size.Y, 0)).p)
+							local BR = camera:WorldToViewportPoint((newplr.Character.HumanoidRootPart.CFrame * CFrame.new(-Size.X, -Size.Y, 0)).p)
+	
+							Top.From = Vector2.new(TL.X, TL.Y)
+							Top.To = Vector2.new(TR.X, TR.Y)
+	
+							Left.From = Vector2.new(TL.X, TL.Y)
+							Left.To = Vector2.new(BL.X, BL.Y)
+	
+							Right.From = Vector2.new(TR.X, TR.Y)
+							Right.To = Vector2.new(BR.X, BR.Y)
+	
+							Bottom.From = Vector2.new(BL.X, BL.Y)
+							Bottom.To = Vector2.new(BR.X, BR.Y)
+	
+							if newplr.TeamColor == plr.TeamColor then
+								Top.Color = Color3.fromRGB(0, 0, 255)
+								Left.Color = Color3.fromRGB(0, 0, 255)
+								Bottom.Color = Color3.fromRGB(0, 0, 255)
+								Right.Color = Color3.fromRGB(0, 0, 255)
+							else 
+								Top.Color = Color3.fromRGB(0, 0, 0)
+								Left.Color = Color3.fromRGB(0, 0, 0)
+								Bottom.Color = Color3.fromRGB(0, 0, 0)
+								Right.Color = Color3.fromRGB(0, 0, 0)
+							end
+	
+							Top.Visible = true
+							Left.Visible = true
+							Bottom.Visible = true
+							Right.Visible = true
+						else 
+							Top.Visible = false
+							Left.Visible = false
+							Bottom.Visible = false
+							Right.Visible = false
+						end
+					else 
+						Top.Visible = false
+						Left.Visible = false
+						Bottom.Visible = false
+						Right.Visible = false
+						if game.Players:FindFirstChild(newplr.Name) == nil then
+							connection:Disconnect()
+						end
+					end
+				end)
+			end
+			coroutine.wrap(ESP)()
+		end)
+	end)
+end
+coroutine.wrap(JFWVGNU_fake_script)()
+local function JHKONCI_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(30,30,30)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(25, 25, 25)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(JHKONCI_fake_script)()
+local function FDVG_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local walkspeedplayer = game:GetService("Players").LocalPlayer
+		local walkspeedmouse = walkspeedplayer:GetMouse()
+	
+		local walkspeedenabled = false
+	
+		function x_walkspeed(key)
+			if (key == "b") then
+				if walkspeedenabled == false then
+					script.Parent.On_off_Speed.BackgroundColor3 = Color3.fromRGB(170,255,000)
+					_G.WS = 80;
+					local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+					Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+						Humanoid.WalkSpeed = _G.WS;
+					end)
+					Humanoid.WalkSpeed = _G.WS;
+	
+					walkspeedenabled = true
+				elseif walkspeedenabled == true then
+					script.Parent.On_off_Speed.BackgroundColor3 = Color3.fromRGB(255,0,0)
+					_G.WS = 20;
+					local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+					Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+						Humanoid.WalkSpeed = _G.WS;
+					end)
+					Humanoid.WalkSpeed = _G.WS;
+	
+					walkspeedenabled = false
+				end
+			end
+		end
+	
+		walkspeedmouse.KeyDown:connect(x_walkspeed)
+	
+	end)
+end
+coroutine.wrap(FDVG_fake_script)()
+local function TZCFT_fake_script() -- Infinitejump.LocalScript 
+	local script = Instance.new('LocalScript', Infinitejump)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(30,30,30)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(25, 25, 25)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(TZCFT_fake_script)()
+local function HFTF_fake_script() -- Infinitejump.LocalScript 
+	local script = Instance.new('LocalScript', Infinitejump)
+
+	_G.InfinitJump = false ----once again its false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+	
+		if _G.InfinitJump then 
+			_G.InfinitJump = false ----checking and making it false
+			script.Parent.On_off_InfJump.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	
+		else 
+			_G.InfinitJump = true----making it true
+			script.Parent.On_off_InfJump.BackgroundColor3 = Color3.fromRGB(170, 255, 0)
+		end 
+	
+		local Player = game:GetService'Players'.LocalPlayer;
+		local UIS = game:GetService'UserInputService';
+	
+		_G.JumpHeight = 50;
+	
+		function Action(Object, Function) if Object ~= nil then Function(Object); end end
+	
+		UIS.InputBegan:connect(function(UserInput)
+			if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+				Action(Player.Character.Humanoid, function(self)
+					if _G.InfinitJump and ( self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall) then
+						Action(self.Parent.HumanoidRootPart, function(self)
+							self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+						end)
+					end
+				end)
+			end
+		end)
+	
+	end)
+end
+coroutine.wrap(HFTF_fake_script)()
+local function KIROLN_fake_script() -- Noclip.LocalScript 
+	local script = Instance.new('LocalScript', Noclip)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(30,30,30)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(25, 25, 25)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(KIROLN_fake_script)()
+local function KUPVR_fake_script() -- Noclip.LocalScript 
+	local script = Instance.new('LocalScript', Noclip)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		noclip = false
+		game:GetService('RunService').Stepped:connect(function()
+			if noclip then
+				script.Parent.On_off_Clip.BackgroundColor3 = Color3.fromRGB(170, 255, 0)
+				game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+			end
+		end)
+		plr = game.Players.LocalPlayer
+		mouse = plr:GetMouse()
+		mouse.KeyDown:connect(function(key)
+	
+			if key == "e" then
+				noclip = not noclip
+				script.Parent.On_off_Clip.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+				game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+			end
+		end)
+	end)
+end
+coroutine.wrap(KUPVR_fake_script)()
+local function XTZD_fake_script() -- ChatSpam.LocalScript 
+	local script = Instance.new('LocalScript', ChatSpam)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(30,30,30)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(25, 25, 25)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(XTZD_fake_script)()
+local function TUZJVOU_fake_script() -- ChatSpam.LocalScript 
+	local script = Instance.new('LocalScript', ChatSpam)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local messages = {
+			"[Wolf hub bot] Use Wolf hub today!";
+			"[Wolf hub bot] Wolf hub is winning!";
+			"[Wolf hub bot] It gets constant updates! Never patched! Don't act like you dont care. We know you do!";
+			"[Wolf hub] We believe it's your turn to shine now.";
+		};
+	
+		local d=false spawn(function() while not d do local c=wait local b=print local a=game:GetService("ReplicatedStorage"):WaitForChild("DefaultChatSystemChatEvents").SayMessageRequest c(1) b(string.reverse("taoG yb detaerC toB-tahC")) for i,v in pairs(messages) do if not d then a:FireServer(v, "All") print(d) c(3) elseif d then break end end end end) local p=game:GetService("Players").LocalPlayer p.Character.Humanoid.Died:connect(function() d=true end)
+	end)
+	
+end
+coroutine.wrap(TUZJVOU_fake_script)()
+local function IVNJZG_fake_script() -- Load.LocalScript 
+	local script = Instance.new('LocalScript', Load)
+
+	script.Parent.MouseEnter:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(28,28,28)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(255,255,255)}):Play()
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['BackgroundColor3'] = Color3.fromRGB(30,30,30)}):Play()
+		game:GetService("TweenService"):Create(script.Parent, TweenInfo.new(0.25), {['TextColor3'] = Color3.fromRGB(0,0,0)}):Play()
+	end)
+end
+coroutine.wrap(IVNJZG_fake_script)()
+local function QZCQN_fake_script() -- Load.LocalScript 
+	local script = Instance.new('LocalScript', Load)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent.Parent.WolfFrame.Visible = true
+		script.Parent.Parent.Parent.Parent.loadingpremium.Visible = false
+		
+	end)
+end
+coroutine.wrap(QZCQN_fake_script)()
